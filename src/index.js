@@ -1,7 +1,14 @@
+const path = require('path')
 const express = require('express')
-const readData = require('./src/readData.js')
+const readData = require('./utils/readData.js')
 
 const app = express()
+
+//Path for public and views directory
+const publicDir = path.join(__dirname,"../public");
+
+//To deliver public assets
+app.use(express.static(publicDir));
 
 app.use(express.json())
 

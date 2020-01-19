@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const filePath = path.join(__dirname,"../db/PeriodicTableJSON.json")
+const filePath = path.join(__dirname,"../../db/PeriodicTableJSON.json")
 
 const getProperties = (atomicNum,callback) => {
     fs.readFile(filePath,(error,data) => {
