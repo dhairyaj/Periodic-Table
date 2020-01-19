@@ -8,12 +8,15 @@ app.use(express.json())
 app.get('/elements/:num', (req,res) => {
     const atomicNum = req.params.num
 
-    const result = readData.getProperties(atomicNum)
-    if(!result){
-        res.status(404).send()
-    }
-    res.send(result)
-    // console.log(typeof getProperties)
+    readData.getProperties(atomicNum,(data,error) => {
+        if(error){
+            res.status(500).send()
+        }
+        if(!data){
+            res.status(404).send()
+        }
+        res.send(data)
+    })
 })
 
 app.listen(3000,() => {
