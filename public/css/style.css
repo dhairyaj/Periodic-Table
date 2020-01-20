@@ -1,21 +1,24 @@
 .title{
+    
     text-align: center;
     padding-top: 5vh;
     margin: 8vh;
 }
 
 .main{
+
     align-items: center;
     text-align: center;
 }
 
 .fetched h3{
+    
     text-align: center;
 }
 
 .fetched .table{
     padding-top: 2vh;
-    width: 20vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
