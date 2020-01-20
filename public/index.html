@@ -27,7 +27,7 @@
                     </div>
                     <small id="atnumtext" class="form-text text-muted col-sm-4">Only 119 elements are known. Enter Between 1 & 119.</small>
                   </div><br><br>
-                <button type="submit" class="btn btn-primary">Fetch away!!</button>
+                <button type="button" onclick="submitVal()" class="btn btn-primary">Fetch away!!</button>
               </form>
           </div><br><br>
           <div class="fetched">
@@ -40,7 +40,7 @@
                   </tr>
                   <tr>
                     <td>Atomic Number</td>
-                    <td id="number">@mdo</td>
+                    <td id="atomicNum">@mdo</td>
                   </tr>
                   <tr>
                     <td>Symbol</td>
@@ -58,16 +58,12 @@
                     <td>Phase</td>
                     <td id="phase">@mdo</td id="">
                   </tr>
-                  <tr>
-                    <td>Color</td>
-                    <td id="color">@mdo</td id="">
-                  </tr>
                 </tbody>
               </table>
           </div>
       </div>
     
-    
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="./js/fetch.js"></script>
   </body>
