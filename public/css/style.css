@@ -8,3 +8,14 @@
     align-items: center;
     text-align: center;
 }
+
+.fetched h3{
+    text-align: center;
+}
+
+.fetched .table{
+    padding-top: 2vh;
+    width: 20vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
