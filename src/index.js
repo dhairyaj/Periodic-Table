@@ -3,6 +3,7 @@ const express = require('express')
 const readData = require('./utils/readData.js')
 
 const app = express()
+const port = process.env.PORT || 3000;
 
 //Path for public and views directory
 const publicDir = path.join(__dirname,"../public");
@@ -26,6 +27,6 @@ app.get('/elements/:num', (req,res) => {
     })
 })
 
-app.listen(3000,() => {
+app.listen(port,() => {
     console.log('App is running on port 3000')
 })
