@@ -7,7 +7,7 @@ const phase = document.getElementById("phase");
 
 function submitVal(){
     var number = document.getElementById('number').value;
-    fetch('http://localhost:3000/elements/'+number).then((response) => {
+    fetch('/elements/'+number).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 alert("Something went wrong!")

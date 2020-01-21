@@ -28,5 +28,5 @@ app.get('/elements/:num', (req,res) => {
 })
 
 app.listen(port,() => {
-    console.log('App is running on port 3000')
+    console.log('App is running on port ' + port)
 })
